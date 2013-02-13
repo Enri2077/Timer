@@ -3,8 +3,7 @@
 
 import pygtk
 pygtk.require('2.0')
-import gtk
-import os, time, gobject, platform
+import gtk, os, time, gobject, platform
 
 def notify(nome, testo):
 	if platform.system()=='Windows':
