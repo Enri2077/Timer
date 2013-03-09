@@ -7,7 +7,7 @@ import gtk
 import os, time, gobject,platform
 
 def notify(nome, testo):
-  if platform.system()=='Windows':
+	if platform.system()=='Windows':
 		os.system('notifu /t warn /d 8000 /m "Timer:  %s  %s"'%(nome,testo))
 	else:
 		os.system('notify-send "Timer %s" "%s" -u critical'%(nome, testo))
